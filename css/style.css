@@ -41,11 +41,12 @@ main {
   gap: 3rem;
 }
 
-.showcase__title {
-  font-size: clamp(2rem, 5vw, 5rem);
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
+.showcase__header {
+  max-width: 90rem;
+}
+
+.showcase__header > img {
+  display: block;
 }
 
 .showcase__container {
