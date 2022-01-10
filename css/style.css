@@ -29,8 +29,13 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   display: grid;
-  place-items: center;
+  place-items: start center;
   background-color: #000000;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    place-items: center;
+  }
 }
 
 main {
