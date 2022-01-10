@@ -227,7 +227,3 @@ input[type="checkbox"]:checked + label {
   top: 25%;
   transform: translateX(-25px);
 } */
-
-.showcase__footer {
-  padding-block: 10rem;
-}
