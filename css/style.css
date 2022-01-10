@@ -39,7 +39,7 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-color: #050505;
+  background-color: #000000;
 }
 
 .showcase__header {
@@ -67,7 +67,7 @@ main {
   padding-inline: 2rem;
 }
 
-.showcase__form-container {
+/* .showcase__form-container {
   width: 100%;
   background-color: #080808;
   padding-block: 8rem;
@@ -226,7 +226,7 @@ input[type="checkbox"]:checked + label {
   right: 0;
   top: 25%;
   transform: translateX(-25px);
-}
+} */
 
 .showcase__footer {
   padding-block: 10rem;
