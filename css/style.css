@@ -25,11 +25,12 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: rgb(0, 0, 0);
   display: grid;
   place-items: center;
+  background-color: #000000;
 }
 
 main {
@@ -37,8 +38,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
-  gap: 3rem;
+  width: 100%;
+  background-color: #050505;
 }
 
 .showcase__header {
@@ -47,6 +48,7 @@ main {
 
 .showcase__header > img {
   display: block;
+  width: 100%;
 }
 
 .showcase__container {
@@ -62,4 +64,166 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-inline: 2rem;
+}
+
+.showcase__form-container {
+  width: 100%;
+  background-color: #080808;
+}
+
+.form__title {
+  font-family: "Poppins", sans-serif, "arial";
+  font-weight: 600;
+  font-size: clamp(4rem, 8vw, 7rem);
+  color: white;
+  text-align: center;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-container {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .input-container {
+    width: 100%;
+  }
+}
+
+.input-container.wide {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container-wrapper {
+  width: 650px;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.submit-btn {
+  border: none;
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #4b8cfb;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+input[type="checkbox"] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+.error-input {
+  visibility: hidden;
+  color: var(--red);
+  font-size: 0.8rem;
+}
+
+.error-text {
+  text-align: right;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+  color: rgb(255, 111, 111);
+}
+
+.show-error {
+  visibility: visible;
+}
+
+.hasError {
+  border: 2px solid red;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.error-icon {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  transform: translateX(-25px);
 }

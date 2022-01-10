@@ -12,20 +12,61 @@
       
       </head>
 <body>
+    <header class="showcase__header">
+        <img src="./images/logo.png" alt="say their names">
+    </header>
     <main>
-        <header class="showcase__header">
-            <img src="./images/logo.png" alt="say their names">
-        </header>
         <div class="showcase__container">
             <iframe class="showcase__video" src="https://player.vimeo.com/video/663734863?h=8007143c85&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
+
+        <div class="showcase__form-container">
+
+            <form class="form__contactus" action="contactform.php" method="post">
+
+                <h2 class="form__title">contact us</h2>
+
+                <div class="input-container-wrapper">
+
+                    <div class="input-container wide">
+                        <label for="firstName" class="sr-only">Enter firstname</label>
+                        <input autoComplete="off" type="text" name="firstName" id="firstName" placeholder="Name" >
+                        <span id="errorFirstName" class="error-input">
+                            <p class="error-text">Name cannot be empty</p> 
+                            <img src="images/icon-error.svg" class="error-icon " aria-hidden="true" alt="">
+                        </span>
+                    </div>
+
+
+                    <div class="input-container wide">
+                        <label for="email" class="sr-only">Enter email</label>
+                        <input autoComplete="off" type="text" name="email" id="email" placeholder="Email Address" >
+                        <span id="errorEmail" class="error-input"><p class="error-text">Looks like this is not an email</p> 
+                          <img src="images/icon-error.svg" class="error-icon " aria-hidden="true" alt="">
+                        </span>
+                    </div>
+
+
+                    <div class="input-container wide">
+                        <textarea name="message" placeholder="Message..."></textarea>
+                    </div>
+
+                    <button class="submit-btn" type="submit" name="submit">Submit</button>
+
+                </div>
+
+            </form>
+
+        </div>
     </main>
-    <footer>
+    <footer class="showcase__footer">
         <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
         </ul>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
