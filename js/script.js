@@ -1,3 +1,9 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-G38EZENT9D');
+
 const form = document.querySelector("form");
 const liveRegion = document.querySelector(".input-aria-live");
 
