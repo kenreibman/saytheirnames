@@ -95,6 +95,12 @@ main {
   text-align: center;
 }
 
+.name {
+  color: #fff;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  text-align: center;
+}
+
 .contact__email {
   font-size: clamp(1rem, 2vw, 1.4rem);
   color: rgb(255, 255, 255);
