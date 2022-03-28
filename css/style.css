@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/xtj3mqo.css");
+@import url('https://use.typekit.net/xtj3mqo.css');
 
 :root {
   --blue: hsl(246, 80%, 60%);
@@ -58,6 +58,12 @@ main {
 .showcase__header > img {
   display: block;
   width: 100%;
+}
+
+.showcase__h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .header__p {
