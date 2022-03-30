@@ -47,6 +47,30 @@ main {
   background-color: #000000;
 }
 
+nav {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  color: white;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+ul li:hover {
+  opacity: 80%;
+}
+
+.current {
+  color: red;
+}
+
 .showcase__header {
   max-width: 75rem;
   margin-block: 4rem;
@@ -99,6 +123,8 @@ main {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   color: rgb(255, 255, 255);
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .name {
